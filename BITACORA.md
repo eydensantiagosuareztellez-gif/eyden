@@ -28,3 +28,13 @@ Manejo de respuestas: Resuelto. Con res.json() y res.send() los headers y la con
 
 Lectura del body: Sigue igual. Express sigue requiriendo configurar middlewares (app.use(express.json())), de lo contrario req.body es undefined
 
+## P4
+**No has programado ninguna ruta para /no-existe. ¿Qué crees que responde Express si la pides?**
+
+Express responde en la pantalla con el texto Cannot GET /no-existe y devuelve un código de estado 404 (Not Found).
+
+**Reflexión (bitácora)**
+Express resolvió el enrutamiento al usar métodos explícitos como app.get() y app.post(), y el manejo de respuestas automatizando todo con res.json() y res.send().
+
+Lo que sigue igual es la lectura del body, ya que todavía requiere configurar app.use(express.json()) para evitar que req.body sea undefined.
+
