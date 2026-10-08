@@ -38,3 +38,6 @@ Express resolvió el enrutamiento al usar métodos explícitos como app.get() y 
 
 Lo que sigue igual es la lectura del body, ya que todavía requiere configurar app.use(express.json()) para evitar que req.body sea undefined.
 
+## P5
+**¿Qué ves en el navegador?**
+ 

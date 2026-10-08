@@ -18,7 +18,7 @@ servidor.listen(3000, () => {
 console.log('Escuchando en http://localhost:3000');
 });*/
 
-// app.js
+/*/ app.js
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -27,4 +27,12 @@ res.send('API Aventuras San Gil funcionando');
 });
 app.listen(PORT, () => {
 console.log(`Servidor escuchando en http://localhost:${PORT}`);
+});*/
+
+const express = require('express');
+const app = express();
+
+app.use((req, res, next) => {
+  console.log(`${new Date().toLocaleTimeString()} ${req.method} ${req.url}`);
+  next();
 });
