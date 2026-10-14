@@ -1,0 +1,17 @@
+{
+  "name": "repositorio-reposito-3410088",
+  "version": "1.0.0",
+  "description": "taller",
+  "main": "app.js",
+  "scripts": {
+   "dev": "node --watch app.js",
+   "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
+
+
