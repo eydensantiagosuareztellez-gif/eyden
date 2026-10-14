@@ -54,3 +54,17 @@ En la versión corregida, borra la palabra return que está antes de res.status(
 /actividades/99. ¿Qué recibe el cliente? ¿Qué aparece en la terminal? Después vuelve a poner el
 return.
 rta: lo que ve el cliente  "mensaje": "No existe la actividad con id 99" y en la terminal se ve  5:01:05 p. m. GET /actividades/99
+
+## p8
+r/: Cuando ponemos ?tipo=agua, ?tipo=AGUA y ?tipo=fuego. ?tipo=AGUA y ?tipo=fuego nos dan error 200 con una lista vacia mientras que ?tipo=agua nos muestra una lista de id.
+
+## P9
+¿Qué código de estado y qué body vas a recibir? ¿Qué va a imprimir console.log('Body
+recibido:', req.body) en la terminal?
+R/: Recibimos el codigo 201 y imprime Body recibido: undefined
+
+## P10
+Haz cualquier cambio en app.js y guarda (con --watch el servidor se reinicia solo). Vuelve a pedir
+GET /actividades. ¿Sigue estando la actividad que creaste?
+R/: Los datos se van a guardar temporalmente en el servidor pero cuando se reinicie el servidor con los datos guardados se borra
+
