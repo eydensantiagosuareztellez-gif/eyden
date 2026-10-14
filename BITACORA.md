@@ -68,3 +68,4 @@ Haz cualquier cambio en app.js y guarda (con --watch el servidor se reinicia sol
 GET /actividades. ¿Sigue estando la actividad que creaste?
 R/: Los datos se van a guardar temporalmente en el servidor pero cuando se reinicie el servidor con los datos guardados se borra
 
+## P11

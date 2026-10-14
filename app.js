@@ -80,10 +80,6 @@ app.get('/actividades/:id', (req, res) => {
 
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
-});
-
 //Momento 5 · Recibir datos: POST y req.body
 
 app.post('/actividades', (req, res) => {
@@ -91,4 +87,13 @@ console.log('Body recibido:', req.body);
 const nueva = { id: actividades.length + 1, ...req.body };
 actividades.push(nueva);
 res.status(201).json(nueva);
+});
+
+// SIEMPRE de último, después de todas las rutas
+app.use((req, res) => {
+res.status(404).json({ mensaje: `No existe la ruta ${req.method} ${req.url}` });
+});
+
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
